@@ -1,20 +1,21 @@
-import AuthForm from "./components/AuthForm"
+import AuthForm from "./components/AuthForm";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-300">
-      <div className="container mx-auto p-6 sm:p-12">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6">
-              Welcome to Watch List
-          </h1>
-          <p className="text-lg md:text-xl text-white mb-6">
-              Your personal space to curate and manage a wishlist of your favorite watches. 
-              Sign in to create, view, edit, and delete items from your watchlist.
-          </p>
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              <AuthForm />
-          </div>
+    <div className="min-h-screen text-gray-300 bg-gray-900">
+      <div className="container p-6 mx-auto sm:p-12">
+        <h1 className="mb-6 text-5xl font-extrabold text-white md:text-6xl">
+          Welcome to Watch List
+        </h1>
+        <p className="mb-6 text-lg text-white md:text-xl">
+          Your personal space to curate and manage a wishlist of your favorite
+          watches. Sign in to create, view, edit, and delete items from your
+          watchlist.
+        </p>
+        <div className="p-6 bg-gray-800 rounded-lg shadow-lg">
+          <AuthForm />
+        </div>
       </div>
-  </div>
-  )
+    </div>
+  );
 }
